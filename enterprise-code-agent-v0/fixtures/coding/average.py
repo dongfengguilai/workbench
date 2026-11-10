@@ -1,4 +1,6 @@
-def average(values):
-    # 缺陷验收材料：空列表时抛异常，且结果使用整数除法。
-    # Intentionally flawed coding fixture; repair it during E2E acceptance.
+"""故意包含缺陷的验收输入，不是可复用的数学库。
+Intentionally defective acceptance fixture, not a reusable math library.
+"""
+def mean(values):
+    # 缺陷：未处理空输入，且整除丢失小数。Fix source, not the tests.
     return sum(values) // len(values)

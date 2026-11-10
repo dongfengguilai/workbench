@@ -1,6 +1,5 @@
-# Git blob IDs for the repository delivery
-# Git objects represent the uploaded content (not SHA-256 checksums).
-# Regenerate after modifying files. Git tree: 743d0b04cf12e36c5d829f739a4d83b906b79ad8
+# Git blob hashes for packaged files (excludes this manifest).
+# Generated against tree 706a3cd5e8893c749d5e9c765851130d52d0322f. These are Git SHA-1 object IDs, not SHA-256.
 4bf08c619e8b9fef41eadfa79bd0fc5b27c720ba  .dockerignore
 67ee6cf6fd36fd1d1140b4b14d46f37159a50322  .gitignore
 ae91e8846bf4476078d40b3fb3164d20a4eaadce  AGENTS.md
@@ -22,9 +21,10 @@ ce80b56fd3bdf43629d86d812d08d156c5dea45e  docs/04-ACCEPTANCE.md
 8e5695bb1da46677f57920516c8d0738563d9c05  docs/05-DOCKER-RUNBOOK.md
 59d613a19e75c709cfa51d34fa1f936eedceed9b  docs/06-RESEARCH.md
 ce1dd95e52c542f923a88df4664da8d5615db320  docs/07-UNIFIED-CODE-AGENT-DECISION.md
+6dd989ad7c38f7978aa20395fb320a304d1b8ac4  evidence/checks.txt
 9a570c3d10d83ce6a557a063076fb8902870dc3d  evidence/delivery-status.json
-c75a25fb50db7eff0198371b6f8e36b49a6e73d3  fixtures/coding/average.py
-36aaef475432e93c4ac0fa9ad0c7215e4d29e514  fixtures/coding/test_average.py
+207478101f522b0e91961aa1c086c0c7cf2346bb  fixtures/coding/average.py
+4941509bbf007e984f0089da3c3c30c8f55e7656  fixtures/coding/test_average.py
 6ac50e56a4ae50a6b9eb494670673d0af5d47eb4  package.json
 b68935db0aad7d349f7b6adeb3876334d2fe3bf9  scripts/check-pack.mjs
 fddcd2f709d2e2419a4d5c8cd142a74a09bd9695  scripts/check-sql.py
