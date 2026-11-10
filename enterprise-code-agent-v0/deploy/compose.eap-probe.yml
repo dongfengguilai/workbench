@@ -1,0 +1,17 @@
+name: eap-protocol-check
+services:
+  eap-protocol-check:
+    image: enterprise-agent/protocol-check:v0.1.0
+    container_name: eap-protocol-check-v0
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.eap-probe
+    init: true
+    read_only: true
+    network_mode: none
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    mem_limit: 256m
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=32m

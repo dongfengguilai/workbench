@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+**/auth.json
+node_modules/
+.tooling/
+vendor/
+state/
+workspaces/
+__pycache__/
+*.pyc

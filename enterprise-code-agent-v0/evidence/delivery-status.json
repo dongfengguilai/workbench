@@ -1,0 +1,70 @@
+{
+  "packageVersion": "v0.1.1-devpack",
+  "specificationDate": "2026-11-10",
+  "productImplementationComplete": false,
+  "productAccepted": false,
+  "deliveryKind": "development-specification-and-offline-protocol-skeleton",
+  "onlinePrimarySourcesReviewed": true,
+  "localUpstreamCloneCompleted": false,
+  "upstreamCandidateVersion": "0.167.0",
+  "upstreamCommit": null,
+  "protocolUnitTests": {
+    "status": "pass",
+    "passed": 20,
+    "failed": 0,
+    "realCodex": false
+  },
+  "sqliteConstraintTests": {
+    "status": "pass",
+    "passed": 11,
+    "failed": 0,
+    "apiImplemented": false
+  },
+  "typeCheck": {
+    "status": "pass",
+    "scope": "contracts/platform.ts"
+  },
+  "realCodexIntegration": {
+    "status": "not_run",
+    "reason": "Codex binary absent; container GitHub DNS unavailable"
+  },
+  "realModelIntegration": {
+    "status": "not_run",
+    "reason": "No authorized model endpoint or credentials supplied"
+  },
+  "enterpriseMcpIntegration": {
+    "status": "not_run",
+    "reason": "No authorized enterprise MCP endpoint or credentials supplied"
+  },
+  "dockerBuildAndE2E": {
+    "status": "not_run",
+    "reason": "Docker is not installed in this environment"
+  },
+  "userAcceptance": {
+    "status": "not_run",
+    "accepted": false
+  },
+  "notes": [
+    "Updated from three selectable agents to one Code Agent; three scenarios are task types; real mixed-task thread not yet verified.",
+    "Probe Dockerfile is only for offline skeleton tests, not the platform.",
+    "Coding fixture intentionally fails before an agent repairs a private copy.",
+    "Detailed checks and exit codes are recorded in checks.txt."
+  ],
+  "fixtureValidation": {
+    "initialFailureExpected": true,
+    "temporaryReferenceRepairTestsPassed": 4,
+    "distributedFixtureStillDefective": true
+  },
+  "formatValidation": {
+    "yaml": "syntax_pass",
+    "toml": "syntax_pass",
+    "shell": "syntax_pass",
+    "markdownFences": "pass"
+  },
+  "designDecision": "one-code-agent-one-chat-entry-and-mixed-task-thread",
+  "designValidation": {
+    "status": "specification_only",
+    "singleAgentCodeAgent": true,
+    "oneThreadMultiScenarioVerified": false
+  }
+}

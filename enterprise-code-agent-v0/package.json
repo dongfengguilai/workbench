@@ -1,0 +1,16 @@
+{
+  "name": "enterprise-code-agent-v0-devpack",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "description": "V0 development specification and offline protocol skeleton; not a complete product",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test starter/jsonl-peer.test.mjs",
+    "check": "node scripts/check-pack.mjs",
+    "probe": "node starter/handshake.mjs",
+    "test:sql": "python3 scripts/check-sql.py"
+  }
+}

@@ -1,0 +1,34 @@
+# Git blob IDs for the repository delivery
+# Git objects represent the uploaded content (not SHA-256 checksums).
+# Regenerate after modifying files. Git tree: 743d0b04cf12e36c5d829f739a4d83b906b79ad8
+4bf08c619e8b9fef41eadfa79bd0fc5b27c720ba  .dockerignore
+67ee6cf6fd36fd1d1140b4b14d46f37159a50322  .gitignore
+ae91e8846bf4476078d40b3fb3164d20a4eaadce  AGENTS.md
+0fe51361cd61520657c21314b1edf35c5c4e68e2  README.md
+1350a46795c64cf025002a2abf851d485ddde1de  START_HERE.md
+ef73cff776365bfeae07403d60e8a421aa9df750  V0-SPEC-ALL-IN-ONE.md
+5c93e513fae1a66e70fdbe0670a083953d730fe0  config/code-agent.example.json
+d2d95691aed1ff8541848da5aadca4fb31cfd644  config/codex-provider.example.toml
+c6ee87e7b4f98765c2c497ec77364c0018b5ec12  config/platform.env.example
+5d01c60b6083fcef04a37107df710b986708856b  contracts/platform.ts
+deffac90e5dd1e12c4941b95203c4a2b6265f66e  contracts/schema.sql
+97fa06f3f60ccf3c3f29db3af9a8601390112a62  deploy/Dockerfile.eap-probe
+833944f69019f92cc53cbebf9af3a2d7fe90d62c  deploy/compose.eap-probe.yml
+ceda27e31c123873dd815b378eb754f8dfb7c856  deploy/compose.eap-v0.yml.example
+1a12ba26227327097b1b5eae7335208640d51064  docs/01-V0-SPEC.md
+5855f096fb230b05e59dbbb52efa5ed32c55e0b5  docs/02-PROTOCOL-CONTRACT.md
+7a4f7e23e94a6077658dd43ea6204dbc2f9382cf  docs/03-TASKS.md
+ce80b56fd3bdf43629d86d812d08d156c5dea45e  docs/04-ACCEPTANCE.md
+8e5695bb1da46677f57920516c8d0738563d9c05  docs/05-DOCKER-RUNBOOK.md
+59d613a19e75c709cfa51d34fa1f936eedceed9b  docs/06-RESEARCH.md
+ce1dd95e52c542f923a88df4664da8d5615db320  docs/07-UNIFIED-CODE-AGENT-DECISION.md
+9a570c3d10d83ce6a557a063076fb8902870dc3d  evidence/delivery-status.json
+c75a25fb50db7eff0198371b6f8e36b49a6e73d3  fixtures/coding/average.py
+36aaef475432e93c4ac0fa9ad0c7215e4d29e514  fixtures/coding/test_average.py
+6ac50e56a4ae50a6b9eb494670673d0af5d47eb4  package.json
+b68935db0aad7d349f7b6adeb3876334d2fe3bf9  scripts/check-pack.mjs
+fddcd2f709d2e2419a4d5c8cd142a74a09bd9695  scripts/check-sql.py
+b936365db28ae3d9bfb96b83a234a58c9a2a591c  scripts/prepare-upstream.sh
+b573e017f9a337e308d5527019373763a0426a4a  starter/handshake.mjs
+47d8bb6eeefd81d35dbfb903fb5459623839c2e6  starter/jsonl-peer.mjs
+574ef705ccb0ffe8f3c9aea8a3943795ad1d446d  starter/jsonl-peer.test.mjs

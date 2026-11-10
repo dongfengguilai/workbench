@@ -1,0 +1,21 @@
+# V0 development package — verification status
+
+Original local preparation recorded on 2026-11-10:
+- JSONL protocol unit tests: 20 passed, 0 failed (offline skeleton only).
+- SQLite schema constraints: 11 passed, 0 failed (offline schema only).
+- TypeScript strict type-check: passed for contracts/platform.ts.
+- Source project real deployment: NOT IMPLEMENTED / NOT VERIFIED.
+- Real Codex App Server integration: NOT RUN.
+- Enterprise model, MCP, Docker end-to-end: NOT RUN.
+- Product V0 user acceptance: NOT RUN.
+
+This GitHub delivery reconstructed source text and documentation from the conversation's generated devpack.
+Do not interpret earlier local checks as proof that this GitHub tree was rerun.
+Re-run from this repository with Node >=22 and Python >=3.11:
+
+    npm test
+    npm run test:sql
+    npm run check
+    tsc --strict --noEmit --target ES2022 --module NodeNext contracts/platform.ts
+
+Review any discrepancies and record new evidence before claiming a passing repository baseline.

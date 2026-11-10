@@ -1,0 +1,7 @@
+# Only the offline protocol skeleton, NOT the enterprise platform.
+ARG NODE_IMAGE=node:22.16.0-bookworm-slim
+FROM ${NODE_IMAGE}
+WORKDIR /opt/eap-devpack
+COPY --chown=node:node . .
+USER node
+CMD ["sh", "-c", "node --test starter/jsonl-peer.test.mjs && node scripts/check-pack.mjs"]

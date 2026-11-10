@@ -1,0 +1,12 @@
+.git
+.env
+.env.*
+secrets
+state
+workspaces
+vendor
+.tooling
+node_modules
+**/auth.json
+**/__pycache__
+*.zip

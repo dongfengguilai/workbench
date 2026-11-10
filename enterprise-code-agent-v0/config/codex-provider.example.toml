@@ -1,0 +1,29 @@
+# 模板，不是已验证配置；请先完成 G0。
+# Template only, not a verified permission policy. Complete G0 first.
+# .invalid 地址阻止误用真实服务。Use an explicitly authorized endpoint.
+model = "REPLACE_WITH_VERIFIED_MODEL"
+model_provider = "enterprise"
+approval_policy = "on-request"
+approvals_reviewer = "user"
+sandbox_mode = "workspace-write"
+web_search = "disabled"
+
+[model_providers.enterprise]
+name = "Enterprise Responses Gateway"
+base_url = "https://model-gateway.invalid/v1"
+env_key = "EAP_MODEL_SCOPED_TOKEN"
+wire_api = "responses"
+
+# 统一 Code Agent 的固定配置中启用只读 MCP；用户身份必须由企业服务校验。
+# Enable read-only MCP for the one Code Agent; service-side ACLs bind user identity.
+[mcp_servers.enterprise_knowledge]
+enabled = true
+required = true
+url = "https://mcp-gateway.invalid/mcp"
+bearer_token_env_var = "EAP_MCP_SCOPED_TOKEN"
+enabled_tools = ["knowledge_search"]
+startup_timeout_sec = 20
+tool_timeout_sec = 45
+
+# workspace-write 允许受限工作区读写和命令，但不能依赖 Prompt 保证安全。
+# Enforce workspace, network, and enterprise-tool boundaries outside the prompt.
